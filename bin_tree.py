@@ -200,10 +200,9 @@ def forall(tree, func) -> None:
 ###########################
 
 
-def foo(value, key) -> any:
-    return print(f"value = {value}  key = {key}")
 def main() -> None:
-    
+    def foo(value, key) -> any:
+        return print(f"value = {value}  key = {key}")
 
     def cmp(key1, key2) -> bool:
         if key1 < key2:
